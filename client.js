@@ -3,7 +3,10 @@ let main =document.querySelector("main");
 var x = 0;
 let max_screen =window.innerWidth;
 let arrow =document.querySelector("#span");
-
+let downloadbtn = document.getElementById("downloadbtn");
+var agent = 0;
+var url = ["https://0ai2.github.io/Apps/acm.apk", "https://0ai2.github.io/Apps/acm.apk"];
+       
 
 body.onscroll = function(){
     if (body.scrollTop >64) {
@@ -42,11 +45,7 @@ if (max_screen >395) {
      }
       document.querySelector(".film").style.left=x;
   }
-  
-  let downloadbtn = document.getElementById("downloadbtn");
-        var agent = 0;
-        var url = ["https://0ai2.github.io/Apps/acm.apk", "https://0ai2.github.io/Apps/acm.apk"];
-        function download() {
+   function download() {
             agent += 1;
             open(url[agent]);
 
